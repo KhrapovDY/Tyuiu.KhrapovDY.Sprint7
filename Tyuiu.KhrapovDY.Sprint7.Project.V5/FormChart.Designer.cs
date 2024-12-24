@@ -33,6 +33,10 @@
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             panelLeft_KDY = new Panel();
             groupBoxButtons_KDY = new GroupBox();
+            labelPrice_KDY = new Label();
+            labelSum_KDY = new Label();
+            textBoxPrice_KDY = new TextBox();
+            textBoxSum_KDY = new TextBox();
             buttonDoneChart_KDY = new Button();
             buttonClose_KDY = new Button();
             panelTop_KDY = new Panel();
@@ -56,6 +60,10 @@
             // 
             // groupBoxButtons_KDY
             // 
+            groupBoxButtons_KDY.Controls.Add(labelPrice_KDY);
+            groupBoxButtons_KDY.Controls.Add(labelSum_KDY);
+            groupBoxButtons_KDY.Controls.Add(textBoxPrice_KDY);
+            groupBoxButtons_KDY.Controls.Add(textBoxSum_KDY);
             groupBoxButtons_KDY.Controls.Add(buttonDoneChart_KDY);
             groupBoxButtons_KDY.Controls.Add(buttonClose_KDY);
             groupBoxButtons_KDY.Dock = DockStyle.Fill;
@@ -66,6 +74,40 @@
             groupBoxButtons_KDY.TabStop = false;
             groupBoxButtons_KDY.Text = "Панель управления:";
             // 
+            // labelPrice_KDY
+            // 
+            labelPrice_KDY.AutoSize = true;
+            labelPrice_KDY.Location = new Point(12, 309);
+            labelPrice_KDY.Name = "labelPrice_KDY";
+            labelPrice_KDY.Size = new Size(213, 32);
+            labelPrice_KDY.TabIndex = 5;
+            labelPrice_KDY.Text = "Стоимость товара";
+            // 
+            // labelSum_KDY
+            // 
+            labelSum_KDY.AutoSize = true;
+            labelSum_KDY.Location = new Point(12, 181);
+            labelSum_KDY.Name = "labelSum_KDY";
+            labelSum_KDY.Size = new Size(226, 32);
+            labelSum_KDY.TabIndex = 4;
+            labelSum_KDY.Text = "Количество товара";
+            // 
+            // textBoxPrice_KDY
+            // 
+            textBoxPrice_KDY.BorderStyle = BorderStyle.FixedSingle;
+            textBoxPrice_KDY.Location = new Point(12, 344);
+            textBoxPrice_KDY.Name = "textBoxPrice_KDY";
+            textBoxPrice_KDY.Size = new Size(291, 39);
+            textBoxPrice_KDY.TabIndex = 3;
+            // 
+            // textBoxSum_KDY
+            // 
+            textBoxSum_KDY.BorderStyle = BorderStyle.FixedSingle;
+            textBoxSum_KDY.Location = new Point(12, 216);
+            textBoxSum_KDY.Name = "textBoxSum_KDY";
+            textBoxSum_KDY.Size = new Size(291, 39);
+            textBoxSum_KDY.TabIndex = 2;
+            // 
             // buttonDoneChart_KDY
             // 
             buttonDoneChart_KDY.Location = new Point(12, 38);
@@ -74,6 +116,7 @@
             buttonDoneChart_KDY.TabIndex = 1;
             buttonDoneChart_KDY.Text = "Выполнить";
             buttonDoneChart_KDY.UseVisualStyleBackColor = true;
+            buttonDoneChart_KDY.Click += buttonDoneChart_KDY_Click;
             // 
             // buttonClose_KDY
             // 
@@ -136,6 +179,7 @@
             Text = "FormChart";
             panelLeft_KDY.ResumeLayout(false);
             groupBoxButtons_KDY.ResumeLayout(false);
+            groupBoxButtons_KDY.PerformLayout();
             panelTop_KDY.ResumeLayout(false);
             groupBoxChart_KDY.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)chart_KDY).EndInit();
@@ -151,5 +195,9 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_KDY;
         private Button buttonDoneChart_KDY;
         private Button buttonClose_KDY;
+        private Label labelPrice_KDY;
+        private Label labelSum_KDY;
+        private TextBox textBoxPrice_KDY;
+        private TextBox textBoxSum_KDY;
     }
 }

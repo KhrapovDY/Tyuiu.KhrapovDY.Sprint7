@@ -118,6 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="buttonImportFromExcel_KDY.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAR3SURBVFhHrVdrTJtVGG7QTTOCMubwjxqdGv7MZcIM
+        u7BusmjQsAQTMy+L/6fzho5tDBiM69wfEzUm/vKKbNAWEHALiiHb1AyyDReDMzHj2pZyKXIrLb08vs/p
+        x8cWsP269UmevD097/s+zznf6clXEwCT4G5rY2OrtakJFpsNDTHRqqLUo95iaWIvNjQMzUASG9wpXC4X
+        auvqbNLvLjY1BKljWM+VEzf6+tHXP2CYzCe+ra1V0el04ru6Oov0NGZCahhSuY1E/8AgBgaHMDg0HJXM
+        Yz4hophwT6rPDocD9VarQ/quYvOIkHwG3QCbDg3bDZP5hGw95uY8cI2OqTFNnLFY7NI7sgnJZdANcGXD
+        dodhMp+ggUDAj+npGd0EH4fsRGQTksegG7CLc4cUGuWww67q+AgImuBOLD4OHkw54KOisbIJyWFIbbBa
+        VQGbOkdGDNPudKi6ru5uZYI7QfLzN9rB5C9MNJIptAwyz6AbcI64MOIaNUzmz0zPqtr/A3eXGhRaBpln
+        0A2wKZ9hLFRGNN5sjCTYmxoUWgaZZ9ANjErDsbHxOyb7kERMBlg8Pj4RF7IXEZOBcfeEnGB3XMheREwG
+        3JNu4WSc6FY9YzIw+e9UXEnEZGBqajquJGIywKs0niQsNnURGTMwMztriLNzc5jzzMOj6FWRY34fzgnP
+        E81NbcYNsEE08q73ef1AUJUsQcYLviDm570qLs53tP1m3IDH44lK77wPCAEPHzLhiaNhPn7EhEdkrCBz
+        BMdPFpqw8bgJz1TcC/PJFIqtpqAOyWPQDcxLc64gEtXqBRTo7msRtqGrrxWXbvyARwvCJhg55tyVgXPo
+        dXQiqzqZYmspqENyGXQDXu+C0BeRPskJBVS6EjpQuwlvfZ+ON2s34/zfp5Emq774Tz3ersvAO6e3IL8h
+        E5kViRTKFEY24PP74VtYiEq/X3Mg4Pa/b92GfOsOvCti7de/xKbiBBQ0m3G4ZRcyyldTZKfwIWHkRxAI
+        BKS53xCDgaVT+FSxCUfa9uBQy27kN2ehpfdzpJfeo8S7OnopskF4qzghtQy6gWAwqEwYYSionTbBxiI5
+        aKVrUNj+AgrOPocPf8xGw5+nsLk0Ad0d1ykS5VegvZIRoVAoKm/GY3IYv7pWguLze7GlZA2KfsnF0Z9z
+        cPin5/G1fJ9Rtgrbq+6DuWYdnv0oFdmnHqRoeDekniGV/4puBxtE/LOe93Dswl6UXMxD2e8vKxPHL+Sh
+        qDMXhZ0v4oueAmSWJeIDW+6ZXTUPUDBNmEhh3YCtsXGa727cCT6OSLTK1dra1I60YyZ80nsQ5VdeQfnl
+        V1Fx+TVUXt2PmmtvYGtZEk5c2ofiX18S5uHTnoPYdiKJYluFS4dRM8AXxqeF2cI9BpmTUZGAHZX3I6ty
+        7S3cWZUCc/U6bC9PRtUf+1F+VYz1vI6P/zoAbQfCqyc0A3xlpgkeFKPkqebveiVzi8yhmUVj5uoU7D65
+        noJLd4Fm4HbALWSjlcwtciWT6cK4GDCClUxyrN0HJtN/wyqumOT9pkkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="toolTipButton_KDY.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>309, 17</value>
+  </metadata>
   <data name="buttonSaveFile_KDY.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -153,9 +181,6 @@
         YII=
 </value>
   </data>
-  <metadata name="toolTipButton_KDY.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>309, 17</value>
-  </metadata>
   <data name="buttonOpenFile_KDY.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m

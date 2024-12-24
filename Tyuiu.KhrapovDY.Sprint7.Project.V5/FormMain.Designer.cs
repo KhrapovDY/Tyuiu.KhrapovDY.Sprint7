@@ -33,6 +33,8 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             panelMenu_KDY = new Panel();
             groupMenu_KDY = new GroupBox();
+            textBoxImportFromExcel_KDY = new TextBox();
+            buttonImportFromExcel_KDY = new Button();
             buttonSaveFile_KDY = new Button();
             buttonOpenFile_KDY = new Button();
             buttonHelp_KDY = new Button();
@@ -71,6 +73,8 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             // groupMenu_KDY
             // 
             groupMenu_KDY.BackColor = Color.White;
+            groupMenu_KDY.Controls.Add(textBoxImportFromExcel_KDY);
+            groupMenu_KDY.Controls.Add(buttonImportFromExcel_KDY);
             groupMenu_KDY.Controls.Add(buttonSaveFile_KDY);
             groupMenu_KDY.Controls.Add(buttonOpenFile_KDY);
             groupMenu_KDY.Controls.Add(buttonHelp_KDY);
@@ -82,6 +86,30 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             groupMenu_KDY.TabIndex = 0;
             groupMenu_KDY.TabStop = false;
             groupMenu_KDY.Text = "Главное меню";
+            // 
+            // textBoxImportFromExcel_KDY
+            // 
+            textBoxImportFromExcel_KDY.BorderStyle = BorderStyle.FixedSingle;
+            textBoxImportFromExcel_KDY.Location = new Point(12, 296);
+            textBoxImportFromExcel_KDY.Name = "textBoxImportFromExcel_KDY";
+            textBoxImportFromExcel_KDY.ReadOnly = true;
+            textBoxImportFromExcel_KDY.Size = new Size(380, 39);
+            textBoxImportFromExcel_KDY.TabIndex = 10;
+            // 
+            // buttonImportFromExcel_KDY
+            // 
+            buttonImportFromExcel_KDY.Image = (Image)resources.GetObject("buttonImportFromExcel_KDY.Image");
+            buttonImportFromExcel_KDY.ImageAlign = ContentAlignment.MiddleLeft;
+            buttonImportFromExcel_KDY.Location = new Point(12, 216);
+            buttonImportFromExcel_KDY.Name = "buttonImportFromExcel_KDY";
+            buttonImportFromExcel_KDY.Padding = new Padding(20, 0, 0, 0);
+            buttonImportFromExcel_KDY.Size = new Size(382, 74);
+            buttonImportFromExcel_KDY.TabIndex = 9;
+            buttonImportFromExcel_KDY.Text = "Импорт из Excel";
+            toolTipButton_KDY.SetToolTip(buttonImportFromExcel_KDY, "Импортирование файла для обработки данных в формате XLSX\r\n");
+            buttonImportFromExcel_KDY.UseVisualStyleBackColor = true;
+            buttonImportFromExcel_KDY.Click += buttonImportFromExcel_KDY_Click;
+            buttonImportFromExcel_KDY.MouseEnter += buttonImportFromExcel_KDY_MouseEnter;
             // 
             // buttonSaveFile_KDY
             // 
@@ -276,6 +304,7 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             Text = "Оптовая база";
             panelMenu_KDY.ResumeLayout(false);
             groupMenu_KDY.ResumeLayout(false);
+            groupMenu_KDY.PerformLayout();
             panelCustom_KDY.ResumeLayout(false);
             groupBoxCustom_KDY.ResumeLayout(false);
             groupBoxCustom_KDY.PerformLayout();
@@ -309,5 +338,7 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
         private Label labelInPut_KDY;
         private TextBox textBoxInPut_KDY;
         private Button buttonEdit_KDY;
+        private TextBox textBoxImportFromExcel_KDY;
+        private Button buttonImportFromExcel_KDY;
     }
 }

@@ -1,4 +1,5 @@
 using System.Data;
+using System.Data.OleDb;
 using System.Text;
 using Tyuiu.KhrapovDY.Sprint7.Project.V5.Lib;
 namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
@@ -38,6 +39,11 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             toolTipButton_KDY.ToolTipTitle = "Сохранить в файл";
         }
 
+        private void buttonImportFromExcel_KDY_MouseEnter(object sender, EventArgs e)
+        {
+            toolTipButton_KDY.ToolTipTitle = "Импорт из Excel";
+        }
+
         private void buttonHelp_KDY_MouseEnter(object sender, EventArgs e)
         {
             toolTipButton_KDY.ToolTipTitle = "Справка";
@@ -55,7 +61,7 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 openFileDialog.InitialDirectory = "C:\\";
-                openFileDialog.Filter = "CSV files (*.csv)|*.csv|All files (*.*)|*.*";
+                openFileDialog.Filter = "CSV files (*.csv)|*.csv|Все файлы (*.*)|*.*";
                 openFileDialog.Title = "Выберите файл для загрузки";
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -71,7 +77,7 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
                         dataTable.Columns.Add("Код товара");
                         dataTable.Columns.Add("Название товара");
                         dataTable.Columns.Add("Количество на складе");
-                        dataTable.Columns.Add("Стоимость единицы товара");
+                        dataTable.Columns.Add("Стоимость товара");
                         dataTable.Columns.Add("Примечания");
 
                         for (int i = 0; i < arrayValues.GetLength(0); i++)
@@ -107,7 +113,7 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
         {
             try
             {
-                saveFileDialog_KDY.FileName = "Outputfile.csv";
+                saveFileDialog_KDY.FileName = "OutPutFileProjectV5.csv";
                 if (saveFileDialog_KDY.ShowDialog() == DialogResult.OK)
                 {
                     string savePath = saveFileDialog_KDY.FileName;
@@ -156,6 +162,18 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
         private void buttonEdit_KDY_Click(object sender, EventArgs e)
         {
             dataGridViewOutPut_KDY.ReadOnly = false;
+        }
+
+
+        private void buttonImportFromExcel_KDY_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog_KDY = new OpenFileDialog();
+            openFileDialog_KDY.Filter = "Книга Excel(*.xlsx)|*.xlsx|Все файлы(*.*)|*.*";
+            if (openFileDialog_KDY.ShowDialog() == DialogResult.OK)
+            {
+                openFilePath = openFileDialog_KDY.FileName;
+                textBoxImportFromExcel_KDY.Text = openFilePath;
+            }
         }
     }
 }
