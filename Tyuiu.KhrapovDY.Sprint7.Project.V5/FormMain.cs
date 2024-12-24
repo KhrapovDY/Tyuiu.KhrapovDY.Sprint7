@@ -2,6 +2,7 @@ using System.Data;
 using System.Data.OleDb;
 using System.Text;
 using Tyuiu.KhrapovDY.Sprint7.Project.V5.Lib;
+using static System.Net.Mime.MediaTypeNames;
 namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
 {
     public partial class FormMain : Form
@@ -173,7 +174,24 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             {
                 openFilePath = openFileDialog_KDY.FileName;
                 textBoxImportFromExcel_KDY.Text = openFilePath;
+                LoadDataFromDataGridView(openFilePath, ".xlsx", "yes");
             }
+        }
+
+        public void LoadDataFromDataGridView(string fpath, string ext, string hdr)
+        {
+            string con = "Provider=Microsoft.Ace.OLEDB.12.0;Data Source={0};Extended Properties='Excel 8.0;HDR={1}'";
+            con = String.Format(con, fpath, hdr);
+            OleDbConnection excelcon = new OleDbConnection(con);
+            excelcon.Open();
+            DataTable exceldata = excelcon.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+            string exsheetname = exceldata.Rows[0]["TABLE_NAME"].ToString();
+            OleDbCommand com = new OleDbCommand("Select * from [" + exsheetname + "]", excelcon);
+            OleDbDataAdapter oda = new OleDbDataAdapter(com);
+            DataTable dt = new DataTable();
+            oda.Fill(dt);
+            excelcon.Close();
+            dataGridViewOutPut_KDY.DataSource = dt;
         }
     }
 }
