@@ -194,5 +194,29 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             excelcon.Close();
             dataGridViewOutPut_KDY.DataSource = dt;
         }
+
+
+        private void textBoxSearch_KDY_Click(object sender, EventArgs e)
+        {
+            string searchValue = textBoxSearch_KDY.Text;
+
+            foreach (DataGridViewRow row in dataGridViewOutPut_KDY.Rows)
+            {
+                bool found = false;
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().Contains(searchValue))
+                    {
+                        found = true;
+                        break;
+                    }
+                }
+                if (found)
+                {
+                    row.Selected = true;
+                    break;
+                }
+            }
+        }
     }
 }
