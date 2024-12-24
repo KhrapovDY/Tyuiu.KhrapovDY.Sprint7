@@ -176,6 +176,7 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
                 textBoxImportFromExcel_KDY.Text = openFilePath;
                 LoadDataFromDataGridView(openFilePath, ".xlsx", "yes");
             }
+            buttonSaveFile_KDY.Enabled = true;
         }
 
         public void LoadDataFromDataGridView(string fpath, string ext, string hdr)

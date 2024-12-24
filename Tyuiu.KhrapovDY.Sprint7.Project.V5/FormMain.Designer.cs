@@ -38,8 +38,8 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             buttonSaveFile_KDY = new Button();
             buttonOpenFile_KDY = new Button();
             buttonHelp_KDY = new Button();
-            panelCustom_KDY = new Panel();
-            groupBoxCustom_KDY = new GroupBox();
+            panelControlPanel_KDY = new Panel();
+            groupBoxControlPanel_KDY = new GroupBox();
             buttonEdit_KDY = new Button();
             labelInPut_KDY = new Label();
             textBoxInPut_KDY = new TextBox();
@@ -54,8 +54,8 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             dataGridViewOutPut_KDY = new DataGridView();
             panelMenu_KDY.SuspendLayout();
             groupMenu_KDY.SuspendLayout();
-            panelCustom_KDY.SuspendLayout();
-            groupBoxCustom_KDY.SuspendLayout();
+            panelControlPanel_KDY.SuspendLayout();
+            groupBoxControlPanel_KDY.SuspendLayout();
             panelOutPut_KDY.SuspendLayout();
             groupBoxOutPutData_KDY.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewOutPut_KDY).BeginInit();
@@ -158,34 +158,34 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             buttonHelp_KDY.Click += buttonHelp_KDY_Click;
             buttonHelp_KDY.MouseEnter += buttonHelp_KDY_MouseEnter;
             // 
-            // panelCustom_KDY
+            // panelControlPanel_KDY
             // 
-            panelCustom_KDY.BackColor = Color.IndianRed;
-            panelCustom_KDY.Controls.Add(groupBoxCustom_KDY);
-            panelCustom_KDY.Dock = DockStyle.Top;
-            panelCustom_KDY.Location = new Point(400, 0);
-            panelCustom_KDY.Name = "panelCustom_KDY";
-            panelCustom_KDY.Size = new Size(1614, 136);
-            panelCustom_KDY.TabIndex = 10;
+            panelControlPanel_KDY.BackColor = Color.White;
+            panelControlPanel_KDY.Controls.Add(groupBoxControlPanel_KDY);
+            panelControlPanel_KDY.Dock = DockStyle.Top;
+            panelControlPanel_KDY.Location = new Point(400, 0);
+            panelControlPanel_KDY.Name = "panelControlPanel_KDY";
+            panelControlPanel_KDY.Size = new Size(1614, 136);
+            panelControlPanel_KDY.TabIndex = 10;
             // 
-            // groupBoxCustom_KDY
+            // groupBoxControlPanel_KDY
             // 
-            groupBoxCustom_KDY.BackColor = Color.White;
-            groupBoxCustom_KDY.Controls.Add(buttonEdit_KDY);
-            groupBoxCustom_KDY.Controls.Add(labelInPut_KDY);
-            groupBoxCustom_KDY.Controls.Add(textBoxInPut_KDY);
-            groupBoxCustom_KDY.Controls.Add(buttonSorting_KDY);
-            groupBoxCustom_KDY.Controls.Add(buttonFilter_KDY);
-            groupBoxCustom_KDY.Controls.Add(buttonChart_KDY);
-            groupBoxCustom_KDY.Dock = DockStyle.Fill;
-            groupBoxCustom_KDY.Location = new Point(0, 0);
-            groupBoxCustom_KDY.Margin = new Padding(5);
-            groupBoxCustom_KDY.Name = "groupBoxCustom_KDY";
-            groupBoxCustom_KDY.Padding = new Padding(5);
-            groupBoxCustom_KDY.Size = new Size(1614, 136);
-            groupBoxCustom_KDY.TabIndex = 0;
-            groupBoxCustom_KDY.TabStop = false;
-            groupBoxCustom_KDY.Text = "Панель управления";
+            groupBoxControlPanel_KDY.BackColor = Color.White;
+            groupBoxControlPanel_KDY.Controls.Add(buttonEdit_KDY);
+            groupBoxControlPanel_KDY.Controls.Add(labelInPut_KDY);
+            groupBoxControlPanel_KDY.Controls.Add(textBoxInPut_KDY);
+            groupBoxControlPanel_KDY.Controls.Add(buttonSorting_KDY);
+            groupBoxControlPanel_KDY.Controls.Add(buttonFilter_KDY);
+            groupBoxControlPanel_KDY.Controls.Add(buttonChart_KDY);
+            groupBoxControlPanel_KDY.Dock = DockStyle.Fill;
+            groupBoxControlPanel_KDY.Location = new Point(0, 0);
+            groupBoxControlPanel_KDY.Margin = new Padding(5);
+            groupBoxControlPanel_KDY.Name = "groupBoxControlPanel_KDY";
+            groupBoxControlPanel_KDY.Padding = new Padding(5);
+            groupBoxControlPanel_KDY.Size = new Size(1614, 136);
+            groupBoxControlPanel_KDY.TabIndex = 0;
+            groupBoxControlPanel_KDY.TabStop = false;
+            groupBoxControlPanel_KDY.Text = "Панель управления";
             // 
             // buttonEdit_KDY
             // 
@@ -297,7 +297,7 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             BackColor = Color.White;
             ClientSize = new Size(2014, 1011);
             Controls.Add(panelOutPut_KDY);
-            Controls.Add(panelCustom_KDY);
+            Controls.Add(panelControlPanel_KDY);
             Controls.Add(panelMenu_KDY);
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
@@ -305,9 +305,9 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             panelMenu_KDY.ResumeLayout(false);
             groupMenu_KDY.ResumeLayout(false);
             groupMenu_KDY.PerformLayout();
-            panelCustom_KDY.ResumeLayout(false);
-            groupBoxCustom_KDY.ResumeLayout(false);
-            groupBoxCustom_KDY.PerformLayout();
+            panelControlPanel_KDY.ResumeLayout(false);
+            groupBoxControlPanel_KDY.ResumeLayout(false);
+            groupBoxControlPanel_KDY.PerformLayout();
             panelOutPut_KDY.ResumeLayout(false);
             groupBoxOutPutData_KDY.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewOutPut_KDY).EndInit();
@@ -321,14 +321,12 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
         private Button buttonSaveFile_KDY;
         private Button buttonOpenFile_KDY;
         private Button buttonHelp_KDY;
-        private Panel panelCustom_KDY;
+        private Panel panelControlPanel_KDY;
         private OpenFileDialog openFileDialog_KDY;
         private ToolTip toolTipButton_KDY;
         private SaveFileDialog saveFileDialog_KDY;
-        private GroupBox groupBoxCustom_KDY;
+        private GroupBox groupBoxControlPanel_KDY;
         private Button buttonChart_KDY;
-        private Panel panel1;
-        private Splitter splitter_KDY;
         private Panel panelOutPut_KDY;
         private GroupBox groupBoxInPutData_KDY;
         private GroupBox groupBoxOutPutData_KDY;

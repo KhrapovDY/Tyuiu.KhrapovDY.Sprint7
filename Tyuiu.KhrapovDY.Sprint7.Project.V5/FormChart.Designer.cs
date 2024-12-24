@@ -165,7 +165,7 @@
             chart_KDY.Series.Add(series1);
             chart_KDY.Size = new Size(1412, 754);
             chart_KDY.TabIndex = 0;
-            chart_KDY.Text = "chart1";
+            chart_KDY.Text = "chart";
             // 
             // FormChart
             // 
