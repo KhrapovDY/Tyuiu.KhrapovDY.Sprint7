@@ -248,7 +248,7 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             // buttonChart_KDY
             // 
             buttonChart_KDY.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            buttonChart_KDY.Location = new Point(1426, 77);
+            buttonChart_KDY.Location = new Point(1426, 84);
             buttonChart_KDY.Name = "buttonChart_KDY";
             buttonChart_KDY.Size = new Size(167, 46);
             buttonChart_KDY.TabIndex = 1;
