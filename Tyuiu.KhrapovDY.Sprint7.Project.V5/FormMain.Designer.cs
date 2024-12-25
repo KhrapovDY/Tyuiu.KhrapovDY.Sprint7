@@ -40,11 +40,12 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             buttonHelp_KDY = new Button();
             panelControlPanel_KDY = new Panel();
             groupBoxControlPanel_KDY = new GroupBox();
+            buttonSearch_KDY = new Button();
+            labelSearch_KDY = new Label();
+            textBoxSearch_KDY = new TextBox();
             buttonEdit_KDY = new Button();
             labelInPut_KDY = new Label();
             textBoxInPut_KDY = new TextBox();
-            buttonSorting_KDY = new Button();
-            buttonFilter_KDY = new Button();
             buttonChart_KDY = new Button();
             openFileDialog_KDY = new OpenFileDialog();
             toolTipButton_KDY = new ToolTip(components);
@@ -52,8 +53,6 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             panelOutPut_KDY = new Panel();
             groupBoxOutPutData_KDY = new GroupBox();
             dataGridViewOutPut_KDY = new DataGridView();
-            textBoxSearch_KDY = new TextBox();
-            labelSearch_KDY = new Label();
             panelMenu_KDY.SuspendLayout();
             groupMenu_KDY.SuspendLayout();
             panelControlPanel_KDY.SuspendLayout();
@@ -173,13 +172,12 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             // groupBoxControlPanel_KDY
             // 
             groupBoxControlPanel_KDY.BackColor = Color.White;
+            groupBoxControlPanel_KDY.Controls.Add(buttonSearch_KDY);
             groupBoxControlPanel_KDY.Controls.Add(labelSearch_KDY);
             groupBoxControlPanel_KDY.Controls.Add(textBoxSearch_KDY);
             groupBoxControlPanel_KDY.Controls.Add(buttonEdit_KDY);
             groupBoxControlPanel_KDY.Controls.Add(labelInPut_KDY);
             groupBoxControlPanel_KDY.Controls.Add(textBoxInPut_KDY);
-            groupBoxControlPanel_KDY.Controls.Add(buttonSorting_KDY);
-            groupBoxControlPanel_KDY.Controls.Add(buttonFilter_KDY);
             groupBoxControlPanel_KDY.Controls.Add(buttonChart_KDY);
             groupBoxControlPanel_KDY.Dock = DockStyle.Fill;
             groupBoxControlPanel_KDY.Location = new Point(0, 0);
@@ -191,10 +189,37 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             groupBoxControlPanel_KDY.TabStop = false;
             groupBoxControlPanel_KDY.Text = "Панель управления";
             // 
+            // buttonSearch_KDY
+            // 
+            buttonSearch_KDY.Image = (Image)resources.GetObject("buttonSearch_KDY.Image");
+            buttonSearch_KDY.Location = new Point(1138, 87);
+            buttonSearch_KDY.Name = "buttonSearch_KDY";
+            buttonSearch_KDY.Size = new Size(58, 41);
+            buttonSearch_KDY.TabIndex = 17;
+            buttonSearch_KDY.UseVisualStyleBackColor = true;
+            buttonSearch_KDY.Click += buttonSearch_KDY_Click;
+            // 
+            // labelSearch_KDY
+            // 
+            labelSearch_KDY.AutoSize = true;
+            labelSearch_KDY.Location = new Point(522, 46);
+            labelSearch_KDY.Name = "labelSearch_KDY";
+            labelSearch_KDY.Size = new Size(82, 32);
+            labelSearch_KDY.TabIndex = 16;
+            labelSearch_KDY.Text = "Поиск";
+            // 
+            // textBoxSearch_KDY
+            // 
+            textBoxSearch_KDY.BorderStyle = BorderStyle.FixedSingle;
+            textBoxSearch_KDY.Location = new Point(522, 87);
+            textBoxSearch_KDY.Name = "textBoxSearch_KDY";
+            textBoxSearch_KDY.Size = new Size(610, 39);
+            textBoxSearch_KDY.TabIndex = 15;
+            // 
             // buttonEdit_KDY
             // 
             buttonEdit_KDY.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            buttonEdit_KDY.Location = new Point(859, 77);
+            buttonEdit_KDY.Location = new Point(1212, 82);
             buttonEdit_KDY.Name = "buttonEdit_KDY";
             buttonEdit_KDY.Size = new Size(208, 46);
             buttonEdit_KDY.TabIndex = 14;
@@ -217,28 +242,8 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             textBoxInPut_KDY.Location = new Point(21, 82);
             textBoxInPut_KDY.Name = "textBoxInPut_KDY";
             textBoxInPut_KDY.ReadOnly = true;
-            textBoxInPut_KDY.Size = new Size(200, 39);
+            textBoxInPut_KDY.Size = new Size(418, 39);
             textBoxInPut_KDY.TabIndex = 11;
-            // 
-            // buttonSorting_KDY
-            // 
-            buttonSorting_KDY.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            buttonSorting_KDY.Location = new Point(1073, 77);
-            buttonSorting_KDY.Name = "buttonSorting_KDY";
-            buttonSorting_KDY.Size = new Size(191, 46);
-            buttonSorting_KDY.TabIndex = 3;
-            buttonSorting_KDY.Text = "Сортировка";
-            buttonSorting_KDY.UseVisualStyleBackColor = true;
-            // 
-            // buttonFilter_KDY
-            // 
-            buttonFilter_KDY.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            buttonFilter_KDY.Location = new Point(1270, 77);
-            buttonFilter_KDY.Name = "buttonFilter_KDY";
-            buttonFilter_KDY.Size = new Size(150, 46);
-            buttonFilter_KDY.TabIndex = 2;
-            buttonFilter_KDY.Text = "Фильтр";
-            buttonFilter_KDY.UseVisualStyleBackColor = true;
             // 
             // buttonChart_KDY
             // 
@@ -283,33 +288,14 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             // dataGridViewOutPut_KDY
             // 
             dataGridViewOutPut_KDY.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewOutPut_KDY.ColumnHeadersVisible = false;
             dataGridViewOutPut_KDY.Dock = DockStyle.Fill;
             dataGridViewOutPut_KDY.Location = new Point(5, 37);
             dataGridViewOutPut_KDY.Name = "dataGridViewOutPut_KDY";
             dataGridViewOutPut_KDY.ReadOnly = true;
-            dataGridViewOutPut_KDY.RowHeadersVisible = false;
             dataGridViewOutPut_KDY.RowHeadersWidth = 82;
             dataGridViewOutPut_KDY.Size = new Size(1604, 833);
             dataGridViewOutPut_KDY.TabIndex = 0;
             dataGridViewOutPut_KDY.CellContentClick += dataGridViewOutPut_KDY_CellContentClick;
-            // 
-            // textBoxSearch_KDY
-            // 
-            textBoxSearch_KDY.BorderStyle = BorderStyle.FixedSingle;
-            textBoxSearch_KDY.Location = new Point(297, 82);
-            textBoxSearch_KDY.Name = "textBoxSearch_KDY";
-            textBoxSearch_KDY.Size = new Size(502, 39);
-            textBoxSearch_KDY.TabIndex = 15;
-            // 
-            // labelSearch_KDY
-            // 
-            labelSearch_KDY.AutoSize = true;
-            labelSearch_KDY.Location = new Point(297, 47);
-            labelSearch_KDY.Name = "labelSearch_KDY";
-            labelSearch_KDY.Size = new Size(82, 32);
-            labelSearch_KDY.TabIndex = 16;
-            labelSearch_KDY.Text = "Поиск";
             // 
             // FormMain
             // 
@@ -351,8 +337,6 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
         private Panel panelOutPut_KDY;
         private GroupBox groupBoxInPutData_KDY;
         private GroupBox groupBoxOutPutData_KDY;
-        private Button buttonSorting_KDY;
-        private Button buttonFilter_KDY;
         private DataGridView dataGridViewOutPut_KDY;
         private Label labelInPut_KDY;
         private TextBox textBoxInPut_KDY;
@@ -361,5 +345,6 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
         private Button buttonImportFromExcel_KDY;
         private Label labelSearch_KDY;
         private TextBox textBoxSearch_KDY;
+        private Button buttonSearch_KDY;
     }
 }

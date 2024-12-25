@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormChart));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -110,8 +111,11 @@
             // 
             // buttonDoneChart_KDY
             // 
+            buttonDoneChart_KDY.Image = (Image)resources.GetObject("buttonDoneChart_KDY.Image");
+            buttonDoneChart_KDY.ImageAlign = ContentAlignment.MiddleLeft;
             buttonDoneChart_KDY.Location = new Point(12, 38);
             buttonDoneChart_KDY.Name = "buttonDoneChart_KDY";
+            buttonDoneChart_KDY.Padding = new Padding(20, 0, 0, 0);
             buttonDoneChart_KDY.Size = new Size(291, 77);
             buttonDoneChart_KDY.TabIndex = 1;
             buttonDoneChart_KDY.Text = "Выполнить";
@@ -121,8 +125,11 @@
             // buttonClose_KDY
             // 
             buttonClose_KDY.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            buttonClose_KDY.Image = (Image)resources.GetObject("buttonClose_KDY.Image");
+            buttonClose_KDY.ImageAlign = ContentAlignment.MiddleLeft;
             buttonClose_KDY.Location = new Point(12, 703);
             buttonClose_KDY.Name = "buttonClose_KDY";
+            buttonClose_KDY.Padding = new Padding(20, 0, 0, 0);
             buttonClose_KDY.Size = new Size(291, 77);
             buttonClose_KDY.TabIndex = 0;
             buttonClose_KDY.Text = "Закрыть";

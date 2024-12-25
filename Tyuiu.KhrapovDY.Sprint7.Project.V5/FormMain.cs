@@ -196,7 +196,7 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
         }
 
 
-        private void textBoxSearch_KDY_Click(object sender, EventArgs e)
+        private void buttonSearch_KDY_Click(object sender, EventArgs e)
         {
             string searchValue = textBoxSearch_KDY.Text;
 
