@@ -191,8 +191,9 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             // 
             // buttonSearch_KDY
             // 
+            buttonSearch_KDY.Anchor = AnchorStyles.Left;
             buttonSearch_KDY.Image = (Image)resources.GetObject("buttonSearch_KDY.Image");
-            buttonSearch_KDY.Location = new Point(1138, 87);
+            buttonSearch_KDY.Location = new Point(1099, 79);
             buttonSearch_KDY.Name = "buttonSearch_KDY";
             buttonSearch_KDY.Size = new Size(58, 41);
             buttonSearch_KDY.TabIndex = 17;
@@ -202,7 +203,7 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             // labelSearch_KDY
             // 
             labelSearch_KDY.AutoSize = true;
-            labelSearch_KDY.Location = new Point(522, 46);
+            labelSearch_KDY.Location = new Point(483, 46);
             labelSearch_KDY.Name = "labelSearch_KDY";
             labelSearch_KDY.Size = new Size(82, 32);
             labelSearch_KDY.TabIndex = 16;
@@ -210,8 +211,9 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             // 
             // textBoxSearch_KDY
             // 
+            textBoxSearch_KDY.Anchor = AnchorStyles.Left;
             textBoxSearch_KDY.BorderStyle = BorderStyle.FixedSingle;
-            textBoxSearch_KDY.Location = new Point(522, 87);
+            textBoxSearch_KDY.Location = new Point(483, 81);
             textBoxSearch_KDY.Name = "textBoxSearch_KDY";
             textBoxSearch_KDY.Size = new Size(610, 39);
             textBoxSearch_KDY.TabIndex = 15;
@@ -229,6 +231,7 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             // 
             // labelInPut_KDY
             // 
+            labelInPut_KDY.Anchor = AnchorStyles.Left;
             labelInPut_KDY.AutoSize = true;
             labelInPut_KDY.Location = new Point(21, 46);
             labelInPut_KDY.Name = "labelInPut_KDY";
@@ -238,10 +241,10 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
             // 
             // textBoxInPut_KDY
             // 
+            textBoxInPut_KDY.Anchor = AnchorStyles.Left;
             textBoxInPut_KDY.BorderStyle = BorderStyle.FixedSingle;
             textBoxInPut_KDY.Location = new Point(21, 82);
             textBoxInPut_KDY.Name = "textBoxInPut_KDY";
-            textBoxInPut_KDY.ReadOnly = true;
             textBoxInPut_KDY.Size = new Size(418, 39);
             textBoxInPut_KDY.TabIndex = 11;
             // 

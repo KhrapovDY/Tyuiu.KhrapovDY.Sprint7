@@ -61,7 +61,7 @@ namespace Tyuiu.KhrapovDY.Sprint7.Project.V5
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-                openFileDialog.InitialDirectory = "C:\\";
+                openFilePath = openFileDialog_KDY.FileName;
                 openFileDialog.Filter = "CSV files (*.csv)|*.csv|Все файлы (*.*)|*.*";
                 openFileDialog.Title = "Выберите файл для загрузки";
 
